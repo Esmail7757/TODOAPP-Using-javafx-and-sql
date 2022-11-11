@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AddItemFormController">
+   <children>
+      <TextField fx:id="taskField" layoutX="178.0" layoutY="154.0" prefHeight="46.0" prefWidth="326.0" promptText="Task">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="descriptionFiled" layoutX="178.0" layoutY="223.0" prefHeight="46.0" prefWidth="326.0" promptText="Description">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="saveTaskButton" layoutX="296.0" layoutY="304.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="108.0" style="-fx-background-color: #00ffde;" text="Save Task" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="todosButton" layoutX="496.0" layoutY="354.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="190.0" style="-fx-background-color: #008EEA;" text="My 2Do's()" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Label fx:id="successfulLable" layoutX="421.0" layoutY="122.0" prefHeight="32.0" prefWidth="265.0" text="Task Added Successfully! Add Another one!" visible="false" />
+   </children>
+</AnchorPane>
